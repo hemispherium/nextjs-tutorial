@@ -90,3 +90,17 @@
     flex-direction: column;
   }
 }
+
+dialog {
+  /* デフォルトが inset: 0; なので top: auto; にして下側に配置する */
+  top: auto;
+
+  /* デフォルトで最大幅が設定されていて width: 100% にならないので解除 */
+  max-width: none;
+
+  /* デフォルトで fit-content になっていて中身の幅になってしまうので解除 */
+  width: auto;
+
+  overflow: visible;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
