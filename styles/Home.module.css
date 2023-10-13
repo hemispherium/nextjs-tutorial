@@ -104,3 +104,16 @@ dialog {
   overflow: visible;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
+
+.inner {
+  /* 見た目に関するスタイルはこちらに移す */
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+}
